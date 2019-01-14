@@ -1,0 +1,27 @@
+page-chart {
+  .scroll-content {
+      background-color: #eee;//map-get($colors, light);
+  }
+  ion-card-header {
+      font-weight: bold;
+  }
+
+  ion-card-content{
+    height:100%;
+    min-height: 400px;
+  }
+  ion-segement {
+    width: 95%;
+  }
+
+  .card-ios {
+    border-radius: 10px !important;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 25px !important;
+  }
+  .card-md {
+    border-radius: 8px !important;
+    //box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 12px !important;
+  }
+}
