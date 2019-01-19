@@ -22,7 +22,7 @@ import { AuthData } from '../../../../providers/auth-data';
 })
 export class LoginPage {
   public loginForm: any;
-  public backgroundImage: any = "./assets/aluminium-bg.jpg";
+  public backgroundImage: any = "./assets/login-page-background.png";
   public imgLogo: any = "./assets/medium_150.70391061453px_1202562_easyicon.net.png";
 
   constructor(public navCtrl: NavController, public authData: AuthData, public fb: FormBuilder, public alertCtrl: AlertController,public loadingCtrl: LoadingController,private facebook: Facebook,
