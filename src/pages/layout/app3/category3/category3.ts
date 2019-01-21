@@ -54,13 +54,12 @@ export class Category3Page {
 
   }
 
-
   openList(categoryId){
-      this.navCtrl.push('List3Page',{categoryId:categoryId}); 
+    this.navCtrl.push('List3Page',{categoryId:categoryId}); 
   }
 
   goToDetail(itemId){
-      this.navCtrl.push('Detail3Page',{itemId:itemId}); 
+    this.navCtrl.push('Detail3Page',{itemId:itemId}); 
   }
 
 }

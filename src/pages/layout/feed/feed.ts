@@ -19,13 +19,7 @@ export class FeedPage {
   feedList:  Observable<any[]>;
   feedListArray:any[];
 
-
-
-
   feedView: string = "activity";
-
-
-
 
   constructor(
     public navCtrl: NavController, 
@@ -38,6 +32,7 @@ export class FeedPage {
       spinner: 'crescent',
       content: ''
     });
+
     loadingPopup.present();
     this.feedsRef =  afDB.list('/feed');
     this.feedList = this.feedsRef.snapshotChanges().pipe(
@@ -49,8 +44,10 @@ export class FeedPage {
       )
     );
     loadingPopup.dismiss()
-    
   }
 
-
+  // Opens a description page when tapping on an item on the feed.
+  goToDetail(itemId){
+    this.navCtrl.push('Detail1Page',{itemId:itemId}); 
+  }
 }

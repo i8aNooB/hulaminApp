@@ -50,7 +50,7 @@ export class LoginPage {
         .then( authData => {
           console.log("Auth pass");
           loadingPopup.dismiss();
-          this.navCtrl.setRoot('Category2Page');
+          this.navCtrl.setRoot('FeedPage');
         }, error => {
           var errorMessage: string = error.message;
           loadingPopup.dismiss().then( () => {

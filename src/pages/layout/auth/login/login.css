@@ -1,0 +1,78 @@
+page-login ion-content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
+page-login .scroll-content {
+  margin-top: 0 !important;
+}
+
+page-login .logo {
+  width: 110px;
+  height: 200px;
+  margin-bottom: 8vh;
+  opacity: 0;
+}
+
+page-login span {
+  color: white;
+}
+
+page-login .submit-box {
+  margin-top: 10px;
+  text-align: center;
+}
+
+page-login .error-message .item-inner {
+  border-bottom-color: transparent !important;
+  -webkit-box-shadow: inset 0 -1px 0 0  transparent !important;
+          box-shadow: inset 0 -1px 0 0  transparent !important;
+}
+
+page-login .error-message p {
+  text-align: right;
+  color: white;
+}
+
+page-login ion-item {
+  color: white !important;
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  font-size: 0.9em;
+}
+
+page-login ion-item ion-input {
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+page-login .item-inner {
+  border-bottom: 1px solid white !important;
+  -webkit-box-shadow: inset 0 -1px 0 transparent;
+          box-shadow: inset 0 -1px 0 transparent;
+}
+
+page-login ::-webkit-input-placeholder {
+  color: white !important;
+}
+
+page-login .login-container {
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 10vw;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+page-login ion-button {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=login.css.map */

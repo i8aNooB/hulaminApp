@@ -21,21 +21,30 @@ export class MyApp {
     this.initializeApp();
 
     this.menu = [          
-
         {
-          title: 'Layout with firebase',
+          title: '',
           myicon:'',
-          iconLeft: 'ios-contact',
-          icon: 'ios-add-outline',
+          iconLeft: 'home',
+          icon: '',
+          showDetails: false,
+          items:  [
+              {name:'Home',component:'FeedPage'},// Home Page
+          ]
+        },
+        {
+          title: '',
+          myicon:'',
+          iconLeft: 'contact',
+          icon: '',
           showDetails: false,
           items:  [
               {name:'My Profile',component:'AfterLoginPage'},
           ]
         }, {
-          title: 'Layout with firebase',
+          title: '',
           myicon:'',
-          iconLeft: 'ios-list-box',
-          icon: 'ios-add-outline',
+          iconLeft: 'list-box',
+          icon: '',
           showDetails: false,
           items:  [
               {name:'Products Catalog',component:'Category2Page'},// app2 folder
