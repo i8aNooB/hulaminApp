@@ -4,6 +4,7 @@
 *~
 *.sw[mnpcod]
 *.log
+*.js.map
 *.tmp
 *.tmp.*
 log.txt
@@ -26,9 +27,17 @@ platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
+package-lock.json
 www/
 $RECYCLE.BIN/
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+*.map
+.sourcemaps/0.js.map
+.sourcemaps/1.js.map
+.sourcemaps/4.js.map
+.sourcemaps/7.js.map
+.sourcemaps/main.js.map
+package-lock.json
