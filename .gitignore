@@ -7,6 +7,7 @@
 *.js.map
 *.tmp
 *.tmp.*
+*.orig
 log.txt
 *.sublime-project
 *.sublime-workspace

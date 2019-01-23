@@ -26,7 +26,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 //import { AngularFireAuthModule } from 'angularfire2/auth';
 
-//***********  Facebook **************/
+//************  Facebook **************/
 import { Facebook } from '@ionic-native/facebook';
 //***********  Google plus **************/
 import { GooglePlus } from '@ionic-native/google-plus';
