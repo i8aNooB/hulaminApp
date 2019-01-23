@@ -53,7 +53,7 @@
     <div id="menu-ios" showWhen="ios" class="sideMenu-header"  color="gray">
         <div class="menu-header">
   
-                <img class="user-avatar round" src = "https://pbs.twimg.com/profile_images/834457277830541312/bYMCvtHD.jpg"/>
+                <img class="user-avatar round" src = "../assets/ionic.png"/>
                 <p class="name">Welcome $User</p>         
         </div>
       <!--***********  menu ***********-->
@@ -84,36 +84,44 @@
 <!--***********  Side menu for PWA ***********-->
       <div id="menu-pwa" hideWhen="android,ios">
         <ion-header class="menu-header">      
-          <img class="user-avatar round" src =  "https://pbs.twimg.com/profile_images/834457277830541312/bYMCvtHD.jpg"/>
+          <img class="user-avatar round" src =  "../assets/ionic.png"/>
           <p class="name">Welcome $User</p>
         </ion-header>
-    <!--***********  Menu for android  ***********-->
-        <div class="list-box">
-          <ion-list  no-lines>
+      <!--***********  Menu for PC  ***********-->
+      <div class="list-box">
+        <ion-list  no-lines>
 
-            <div *ngFor="let d of menu">
-                <ion-item tappable  (click)="toggleDetails(d)">
+          <div *ngFor="let d of menu">
+              
+              <ion-item tappable  menuClose item-right *ngFor="let item of d.items"  (click)="openPage(item)" >
                   <ion-icon  color="gray" [name]="d.iconLeft" item-left></ion-icon>
-                    {{d.title}}
-                  <ion-icon item-right [name]="d.icon"></ion-icon>
-                </ion-item>
-                    <div class="sub-menu"  *ngIf="d.showDetails"   >
-                          <ion-item tappable  menuClose item-right *ngFor="let item of d.items"  (click)="openPage(item)" >
-                              <div >{{item.name}}</div>             
-                          </ion-item>
-                    </div>
+                  <div >{{item.name}}</div>    
+              </ion-item>
+             
+            
+              <!-- <ion-item tappable  (click)="toggleDetails(d)">
+                <ion-icon  color="gray" [name]="d.iconLeft" item-left></ion-icon>
+                  {{d.title}}
+                <ion-icon item-right [name]="d.icon"></ion-icon>
+              </ion-item> -->
+              
+                  <!-- <div class="sub-menu"  *ngIf="d.showDetails"   >
+                        <ion-item tappable  menuClose item-right *ngFor="let item of d.items"  (click)="openPage(item)" >
+                            <div >{{item.name}}</div>             
+                        </ion-item>
+                  </div> -->
+          </div> 
+
+          <div *ngFor="let p of pages">
+              <ion-item menuClose (click)="openPage(p)">
+                <ion-icon  [name]="p.icon" color="gray"item-left></ion-icon>
+                  {{p.title}}
+              </ion-item>
             </div> 
 
-            <div *ngFor="let p of pages">
-                <ion-item menuClose (click)="openPage(p)">
-                  <ion-icon  [name]="p.icon" color="gray"item-left></ion-icon>
-                    {{p.title}}
-                </ion-item>
-              </div> 
-
-          </ion-list>
-        </div>
+        </ion-list>
       </div>
+  </div>
 
 
 
