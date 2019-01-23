@@ -30,7 +30,7 @@ $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
   }
   .menu-header {
     padding: 5px 15px;
-    background-image: url('../assets/md-bg1.jpg');
+    background-image: url('../assets/sidebarImage.jpg');//Image on Mobile Side bar
     background-size: cover;
     background-color: color($colors, blue2);
     color: white;
@@ -96,7 +96,7 @@ $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
   }
   .menu-header {
     padding: 5px 15px;
-    background-image: url('../assets/md-bg3.jpg');
+    background-image: url('../assets/sidebarImage.jpg');//Image on PC Side bar
     background-size: cover;
     background-color: color($colors, blue2);
     color: white;
